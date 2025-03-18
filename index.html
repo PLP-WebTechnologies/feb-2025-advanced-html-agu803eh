@@ -1,0 +1,113 @@
+<!DOCTYPE html>     
+<html>  
+<head>
+    <meta name="description" content="HTML lists, images,Tables and forms">
+    <title>HTML lists, images,Tables and forms </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <h1>HTML lists</h1>
+    <p>HTML lists allow web developers to group a set of related items in lists. There are three types of lists in HTML:</p>
+    <ol type="a">
+        <li>Unordered list</li>
+        <li>Ordered list</li>
+        <li>Definition list</li>
+    </ol>
+    <h2>Unordered list</h2>
+    <p>An unordered list starts with the ul tag. Each list item starts with the li tag.</p>
+    <ul type="disk">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        </ul>
+        <h2>Definition list</h2>
+        <p>A definition list is a list of terms and their definitions. It starts with the dl tag. Each term starts with the dt tag and each definition starts with the dd tag.</p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>A markup language for creating web pages</dd>
+            <dt>CSS</dt>
+            <dd>A style sheet language used for describing the presentation of a document written in HTML</dd>
+            <dt>JavaScript</dt>
+            <dd>A programming language commonly used in web development</dd>
+            <dt>PHP</dt>
+            <dd>A server-side scripting language used for web development</dd>
+            <dt>SQL</dt>
+        </dd> Structured Query Language used for managing databases</dd>
+    </dl>
+        <h2>Images</h2>
+        <p>To display an image on a web page, you need to use the img tag. The src attribute specifies the URL of the image and the alt attribute specifies an alternate text for the image.</p>
+        <img src="pexels-padrinan-1591061.jpg" alt="Programming symbols" width="300" height="200"> 
+        <h2>Tables</h2>
+        <p>HTML tables allow web developers to arrange data into rows and columns. A table is defined using the table tag. Each row is defined with the tr tag. A table header is defined with the th tag. By default, table headings are bold and centered. A table data/cell is defined with the td tag.</p>
+        <table border="1">
+            <caption>Sample Table</caption>
+            <tr>
+                <th colspan="1">First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Smith</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Emily</td>
+                <td>Jones</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Michael</td>
+                <td>Johnson</td>
+                <td>40</td>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total number of people: 4</td>
+                    </tr>
+        </table>
+        <h2>Forms</h2>
+        <p>HTML forms are used to collect user input. A form is defined using the form tag. The input element is used to create form controls such as text fields, checkboxes, radio buttons, and submit buttons.</p>
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+        
+            <br><br>
+            <label for="Country">Country:</label>
+            <select id="Country" name="Country">
+                <option value="Kenya">Kenya</option>
+                <option value="Uganda">Uganda</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Rwanda">Rwanda</option>
+            </select>
+            <input type="submit" value="Submit">
+
+            <h2>Audio</h2>
+            <p>The controls attribute adds audio controls, like play, pause, and volume.</p>
+            <audio controls>
+                <source src="Fireboy_DML_Scatter_9jaflaver.com_.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h2>Video</h2>
+            <p>The controls attribute adds video controls, like play, pause, and volume.</p>
+            <video width="320" height="240" controls>
+                <source src="rihanna_we_found_love_official_video_h264_56697.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+</html>
