@@ -60,7 +60,7 @@
 </head>
 <body>
     <p>HTML lists allow web developers to group a set of related items in lists. There are three types of lists in HTML:</p>
-    <ol type="a">
+    <ol type="i">
         <li>Unordered list</li>
         <li>Ordered list</li>
         <li>Definition list</li>
@@ -95,35 +95,46 @@
         <h2>Tables</h2>
         <p>HTML tables allow web developers to arrange data into rows and columns. A table is defined using the table tag. Each row is defined with the tr tag. A table header is defined with the th tag. By default, table headings are bold and centered. A table data/cell is defined with the td tag.</p>
         <table border="1">
-            <caption>Sample Table</caption>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>123 Main St</td>
+            <td>+1234567890</td>
+            <td>john.doe@example.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>456 Elm St</td>
+            <td>+9876543210</td>
+            <td>jane.smith@example.com</td>
+        </tr>
+        <tr>
+            <td>Emily Johnson</td>
+            <td>789 Oak St</td>
+            <td>+1122334455</td>
+            <td>emily.johnson@example.com</td>
+        </tr>
+        <tr>
+            <td>Michael Brown</td>
+            <td>321 Pine St</td>
+            <td>+5566778899</td>
+            <td>michael.brown@example.com</td>
+        </tr>
+        <tr>
+            <td>Sarah Davis</td>
+            <td>654 Maple St</td>
+            <td>+9988776655</td>
+            <td>sarah.davis@example.com</td>
+        </tr>
+        <tfoot>
             <tr>
-                <th colspan="1">First Name</th>
-                <th>Last Name</th>
-                <th>Age</th>
+                <td colspan="4">Contact List</td>
             </tr>
-            <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>25</td>
-            </tr>
-            <tr>
-                <td>Jane</td>
-                <td>Smith</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td>Emily</td>
-                <td>Jones</td>
-                <td>35</td>
-            </tr>
-            <tr>
-                <td>Michael</td>
-                <td>Johnson</td>
-                <td>40</td>
-                <tfoot>
-                    <tr>
-                        <td colspan="3">Total number of people: 4</td>
-                    </tr>
 
         </table>
         <h2>Forms</h2>
@@ -141,10 +152,10 @@
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email"><br><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
-        
-            <br><br>
+            <label for="password">Password:</label><br>
+            <textarea id="password" name="Password" rows="1" cols="30"></textarea><br><br>
+            <label for="dob">Date:</label>
+            <input type="date" id="Date" name="Date"><br><br>
             <label for="Country">Country:</label>
             <select id="Country" name="Country">
                 <option value="Kenya">Kenya</option>
