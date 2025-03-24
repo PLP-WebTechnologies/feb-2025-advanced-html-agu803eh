@@ -1,0 +1,19 @@
+#google {
+  color: red; text-decoration: none; font-weight: bold; 
+}
+.home-footer {
+  color: blueviolet; text-decoration: none  !important; font-weight: lighter; 
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url('background\ 2.jpg'); /*location of the image used*/        
+    background-repeat: no-repeat;   
+  background-size: cover; /*cover the entire background*/
+  background-position:center; /*position the image*/
+}
